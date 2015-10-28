@@ -76,16 +76,20 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	/*
+	*/
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
 	'database' => 'sistem_pakar',
-	*/
+	/*
 	'hostname' => $_ENV['OPENSHIFT_MYSQL_DB_HOST'],
 	'username' => $_ENV['OPENSHIFT_MYSQL_DB_USERNAME'],
 	'password' => $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD'],
 	'database' => 'sistem_pakar',
 	'port' => $_ENV['OPENSHIFT_MYSQL_DB_PORT'],
+	*/
+	/*
+	*/
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

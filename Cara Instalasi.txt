@@ -1,0 +1,21 @@
+Langkah-langkah instalasi :
+1. Copy-kan semua file yang ada di direktori ini ke C:\wamp\www (jika menggunakan WAMP) atau ke C:\xampp\htdocs (jika menggunakan XAMPP)
+2. Buat database baru di server dengan nama sistem_pakar
+3. Edit file config\database.php ganti konfigurasi 
+	'hostname' => 'localhost',
+	
+	'username' => 'root',
+	
+	'password' => '',
+	
+	'database' => 'sistem_pakar',
+sesuaikan dengan konfigurasi mysql server anda.
+4. Buka browser dan ketikkan http://localhost/sistem_pakar
+
+
+
+System Requirement :
+- PHP minimal versi 5.5
+- Mysql minimal 5.x
+
+Ada Pertanyaan ??? Tanyakan ke gunawanassanusi1@gmail.com, dede.gunawan13@student.unsil.ac.id

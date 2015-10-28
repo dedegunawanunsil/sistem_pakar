@@ -95,11 +95,11 @@ CREATE TABLE `penyakit` (
   `solusi` text NOT NULL,
   `other` longtext NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
 
 /*Data for the table `penyakit` */
 
-insert  into `penyakit`(`id`,`nm_penyakit`,`nm_latin`,`definisi`,`solusi`,`other`) values (11,'NGOROK','SEPTICHAEMIA EPIZOOTICA','Penyakit Ini Disebabkan karena apa coba...................................',' ',''),(12,'Mubeng','TRYPANOSOMIASIS','','',''),(13,'Ingusan','MALIGNANT CATHARRAL FEVER','','','');
+insert  into `penyakit`(`id`,`nm_penyakit`,`nm_latin`,`definisi`,`solusi`,`other`) values (11,'NGOROK','SEPTICHAEMIA EPIZOOTICA','','',''),(12,'Mubeng','TRYPANOSOMIASIS','','',''),(13,'Ingusan','MALIGNANT CATHARRAL FEVER','','',''),(15,'SCABIES','-','','','');
 
 /*Table structure for table `relasi` */
 
@@ -111,11 +111,11 @@ CREATE TABLE `relasi` (
   `kd_gejala` int(6) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQUE` (`kd_penyakit`,`kd_gejala`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=latin1;
 
 /*Data for the table `relasi` */
 
-insert  into `relasi`(`id`,`kd_penyakit`,`kd_gejala`) values (7,11,4),(8,11,5),(9,11,6),(10,11,7),(11,11,8),(12,11,9),(14,12,6),(16,12,7),(13,12,10),(17,12,11),(23,13,4),(18,13,7),(19,13,11),(20,13,12),(21,13,13),(22,13,14);
+insert  into `relasi`(`id`,`kd_penyakit`,`kd_gejala`) values (7,11,4),(8,11,5),(9,11,6),(10,11,7),(11,11,8),(12,11,9),(14,12,6),(16,12,7),(13,12,10),(17,12,11),(23,13,4),(18,13,7),(19,13,11),(20,13,12),(21,13,13),(22,13,14),(24,15,15),(27,15,16);
 
 /*Table structure for table `tmp_analisa` */
 
@@ -206,7 +206,7 @@ CREATE TABLE `users` (
 
 /*Data for the table `users` */
 
-insert  into `users`(`id`,`user_nama`,`user_password`,`user_level`) values (1,'admin@es.com','$2y$10$yrOPB1xac8WOdWqENqXvWuRYOUqw3HNQj.b0yOiti29ywTBfO57y2','admin'),(2,'pakar@es.com','$2y$10$viKzEnFSVjWIRJFma35Em.0AJrvJDo0oO8PSggcCULULuowVaJL16','pakar');
+insert  into `users`(`id`,`user_nama`,`user_password`,`user_level`) values (1,'gunawanassanusi1@gmail.com','$2y$10$yrOPB1xac8WOdWqENqXvWuRYOUqw3HNQj.b0yOiti29ywTBfO57y2','admin'),(2,'dede@pakar.com','$2y$10$viKzEnFSVjWIRJFma35Em.0AJrvJDo0oO8PSggcCULULuowVaJL16','pakar');
 
 /*Table structure for table `varietas_sapi` */
 
